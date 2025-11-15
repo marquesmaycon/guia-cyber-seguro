@@ -51,8 +51,8 @@ export const LikeButton = ({ sectionHtmlId }: LikeButtonProps) => {
   }
 
   return (
-    <Button onClick={handleLike} disabled={isLoading} variant={isLiked ? "default" : "outline"}>
-      <ThumbsUp /> {isLiked ? "Curtiu" : "Curtir"} {likesCount}
+    <Button onClick={handleLike} size="sm" disabled={isLoading} variant={isLiked ? "default" : "outline"}>
+      <ThumbsUp /> {likesCount}
     </Button>
   )
 }
