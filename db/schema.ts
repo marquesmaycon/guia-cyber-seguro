@@ -3,6 +3,7 @@ import { integer, pgTable, serial, timestamp, unique, varchar } from "drizzle-or
 export const section = pgTable('sections', {
   id: serial('id').primaryKey(),
   title: varchar('title', { length: 255 }).notNull(),
+  htmlId: varchar('html_id', { length: 255 }).notNull().unique(),
   likesCount: integer('likes_count').default(0).notNull(),
 });
 
