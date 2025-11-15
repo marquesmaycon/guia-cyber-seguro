@@ -1,33 +1,20 @@
 import { ThumbsUp } from "lucide-react"
 import { Button } from "../ui/button"
-import { Card, CardAction, CardContent, CardHeader, CardTitle } from "../ui/card"
+import { Card, CardAction, CardContent, CardFooter, CardHeader, CardTitle } from "../ui/card"
 import { db } from "@/db"
 import { likes, section } from "@/db/schema"
 import { count, eq } from "drizzle-orm"
 import { toggleLike } from "@/lib/actions"
+import { LikeButton } from "../like-button"
 
 export default async function Welcome() {
   const sectionHtmlId = "welcome"
-
-  const [row] = await db
-  .select({ likesCount: count(likes.id) })
-  .from(likes)
-  .innerJoin(section, eq(likes.sectionId, section.id))
-  .where(eq(section.htmlId, sectionHtmlId))
-
-  const likesCount = Number(row?.likesCount ?? 0)
-
   return (
     <Card id={sectionHtmlId}>
       <CardHeader>
         <CardTitle>
           <h2>0. Introdução: Bem-Vindo à Sua Internet Segura</h2>
         </CardTitle>
-        <CardAction>
-          <Button onClick={() => toggleLike(sectionHtmlId)}>
-            <ThumbsUp /> {likesCount}
-          </Button>
-        </CardAction>
       </CardHeader>
       <CardContent>
         <p>
@@ -43,6 +30,9 @@ export default async function Welcome() {
           desconfiança e proteção.
         </p>
       </CardContent>
+      <CardFooter>
+       <LikeButton sectionHtmlId={sectionHtmlId} />
+      </CardFooter>
     </Card>
   )
 }
