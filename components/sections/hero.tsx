@@ -8,7 +8,7 @@ export const Hero = () => {
     <section className="relative flex items-center justify-between px-4">
       <VectorBg vector="1" position="left" className="-top-60" />
       <div className="space-y-6 text-white">
-        <h1 className="text-start font-sans text-pretty lg:text-8xl">
+        <h1 className="text-start font-sans text-5xl text-pretty md:text-7xl lg:text-8xl">
           Guia <br /> Cyber Seguro
         </h1>
         <p className="max-w-lg text-pretty">
@@ -20,7 +20,7 @@ export const Hero = () => {
           HERO BUTTON
         </Button>
       </div>
-      <div>
+      <div className="hidden md:block">
         <Image src="/shield.png" alt="Shield" width={530} height={400} className="object-contain" />
       </div>
     </section>

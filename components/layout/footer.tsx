@@ -24,7 +24,7 @@ export default function Footer() {
     <footer className="relative mt-40 flex flex-col">
       <VectorBg vector="1" position="right" className="-top-65 right-0" />
 
-      <div className="bg-pallete-primary/5 flex-1 px-4 py-12 text-white backdrop-blur-md">
+      <div className="bg-palette-primary/5 flex-1 px-4 py-12 text-white backdrop-blur-md">
         <div className="text-center font-mono">
           <p className="text-balance">
             Guia desenvolvido durante o projeto de extensão curricular do aluno <b>Maycon Silva</b> do curso de{" "}
@@ -35,7 +35,7 @@ export default function Footer() {
             .
           </p>
         </div>
-        <Separator className="bg-pallete-secondary/20 my-8" />
+        <Separator className="bg-palette-secondary/20 my-8" />
         <div className="z-0 flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:justify-between">
           <h6>Desenvolvido por Maycon Marques © {new Date().getFullYear()}</h6>
           <div className="flex items-center justify-between">
