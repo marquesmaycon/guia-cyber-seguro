@@ -1,6 +1,5 @@
 import Image from "next/image"
 
-import { Button } from "../ui/button"
 import { VectorBg } from "../ui/vector-bg"
 
 export const Hero = () => {
@@ -12,13 +11,10 @@ export const Hero = () => {
           Guia <br /> Cyber Seguro
         </h1>
         <p className="max-w-lg text-pretty">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, eveniet, voluptate voluptatibus aut maiores
-          recusandae eum quam, nisi ea incidunt totam. Laudantium quam inventore amet iure labore, repudiandae ea?
-          Laboriosam.
+          A internet conecta você ao mundo, mas navegar exige atenção. Aprenda, de forma simples e passo a passo, como
+          proteger seus dados pessoais, criar senhas fortes e identificar os golpes e fraudes mais comuns para que você
+          possa usar o mundo digital com total confiança e tranquilidade.
         </p>
-        <Button size="lg" variant="gradient">
-          HERO BUTTON
-        </Button>
       </div>
       <div className="hidden md:block">
         <Image src="/shield.png" alt="Shield" width={530} height={400} className="object-contain" />

@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
         <Separator className="bg-palette-secondary/20 my-8" />
         <div>
-          <p className="text-muted text-center font-mono text-sm">
+          <p className="text-muted-foreground text-center font-mono text-sm text-balance">
             O design do projeto foi altamente inspirado no design da comunidade do Figma{" "}
             <a
               href="https://www.figma.com/community/file/1302801971340508755"
@@ -51,6 +51,7 @@ export default function Footer() {
             <a href="https://www.figma.com/@budogol" target="_blank" rel="noopener noreferrer" className="underline">
               Budogol
             </a>
+            .
           </p>
         </div>
         <Separator className="bg-palette-secondary/20 my-8" />

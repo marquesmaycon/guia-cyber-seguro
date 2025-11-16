@@ -7,9 +7,9 @@ const sectionHtmlId = sections.introduction.htmlId
 
 export function Introduction() {
   return (
-    <div className="relative">
-      <VectorBg vector="2" position="right" flipX className="top-1/2 -translate-y-1/2 transform" />
-      <Card id={sectionHtmlId}>
+    <section className="relative" id={sectionHtmlId}>
+      <VectorBg vector="2" position="right" flipX={true} className="top-1/2 -translate-y-1/2 transform" />
+      <Card>
         <CardHeader>
           <CardTitle>
             <h2>1. Introdução à Navegação Segura: O Que é e Por Que Importa</h2>
@@ -86,6 +86,6 @@ export function Introduction() {
           <LikeButton sectionHtmlId={sectionHtmlId} />
         </CardFooter>
       </Card>
-    </div>
+    </section>
   )
 }

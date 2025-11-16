@@ -1,34 +1,42 @@
 export const sections = {
   welcome: {
-    title: "Bem Vindo",
+    title: "0. Bem Vindo",
     htmlId: "welcome"
   },
   introduction: {
-    title: "Introdução",
+    title: "1. Introdução",
     htmlId: "introduction"
   },
   personalDataProtection: {
-    title: "Proteção de Dados Pessoais",
+    title: "2. Proteção de Dados Pessoais",
     htmlId: "personal-data-protection"
   },
-  identifyingScamAndFraudes: {
-    title: "Identificação de Golpes e Fraudes",
-    htmlId: "identifying-scam-and-fraudes"
+  scamAndFraudes: {
+    title: "3. Identificação de Golpes e Fraudes",
+    htmlId: "scam-and-fraudes"
   },
-  cautionDownloadSoftware: {
-    title: "Cuidado ao Baixar Software",
-    htmlId: "caution-download-software"
+  downloadAndSoftwares: {
+    title: "4. Cuidado ao Baixar Software",
+    htmlId: "download-and-softwares"
   },
-  digitalBackupOrganization: {
-    title: "Organização de Backup Digital",
-    htmlId: "digital-backup-organization"
+  digitalOrganization: {
+    title: "5. Organização de Backup Digital",
+    htmlId: "digital-organization"
   },
-  ethicelOnlineBehavior: {
-    title: "Comportamento Ético Online",
-    htmlId: "ethicel-online-behavior"
+  ethicalOnlineBehavior: {
+    title: "6. Ética e Comportamento Online",
+    htmlId: "ethical-online-behavior"
   },
   supportChannels: {
-    title: "Canais de Suporte",
+    title: "7. Canais de Suporte",
     htmlId: "support-channels"
+  },
+  conclusion: {
+    title: "8. Conclusão",
+    htmlId: "conclusion"
+  },
+  references: {
+    title: "9. Referências",
+    htmlId: "references"
   }
 } as const

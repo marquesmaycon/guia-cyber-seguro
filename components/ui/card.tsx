@@ -2,12 +2,12 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
-function Card({ className, ...props }: React.ComponentProps<"section">) {
+function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <section
+    <div
       data-slot="card"
       className={cn(
-        "text-card-foreground bg-palette-secondary/5 z-0 flex flex-col gap-6 rounded-md py-6 shadow-sm backdrop-blur-sm",
+        "text-card-foreground bg-palette-secondary/5 z-0 flex flex-col gap-6 rounded-md py-6 shadow-sm backdrop-blur-lg",
         className
       )}
       {...props}
@@ -33,7 +33,13 @@ function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
 }
 
 function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
-  return <div data-slot="card-description" className={cn("text-muted text-sm font-light", className)} {...props} />
+  return (
+    <div
+      data-slot="card-description"
+      className={cn("text-muted-foreground text-sm font-light", className)}
+      {...props}
+    />
+  )
 }
 
 function CardAction({ className, ...props }: React.ComponentProps<"div">) {

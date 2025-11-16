@@ -9,7 +9,7 @@ type VectorBgProps = React.HTMLAttributes<HTMLDivElement> & {
   flipY?: boolean
 }
 
-export const VectorBg = ({ vector = "2", position = "right", className, ...props }: VectorBgProps) => {
+export const VectorBg = ({ vector = "2", position = "right", flipX, flipY, className, ...props }: VectorBgProps) => {
   return (
     <div
       className={cn(
@@ -19,8 +19,8 @@ export const VectorBg = ({ vector = "2", position = "right", className, ...props
           "bg-vector-1 -top-50 h-[500px] w-[1000px]": vector === "1",
           "-left-64": position === "left",
           "-right-64": position === "right",
-          "scale-x-[-1]": props.flipX,
-          "scale-y-[-1]": props.flipY
+          "scale-x-[-1]": flipX,
+          "scale-y-[-1]": flipY
         },
         className
       )}

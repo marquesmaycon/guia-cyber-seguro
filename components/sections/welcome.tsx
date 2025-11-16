@@ -6,8 +6,8 @@ const sectionHtmlId = sections.welcome.htmlId
 
 export async function Welcome() {
   return (
-    <div className="relative">
-      <Card id={sectionHtmlId}>
+    <section className="relative" id={sectionHtmlId}>
+      <Card>
         <CardHeader>
           <CardTitle>
             <h2>Introdução: Bem-Vindo à Sua Internet Segura</h2>
@@ -33,6 +33,6 @@ export async function Welcome() {
           <LikeButton sectionHtmlId={sectionHtmlId} />
         </CardFooter>
       </Card>
-    </div>
+    </section>
   )
 }
