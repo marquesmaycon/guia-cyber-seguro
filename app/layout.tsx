@@ -1,16 +1,23 @@
 import "./globals.css"
 
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist_Mono, Poppins, Titillium_Web } from "next/font/google"
 
 import Footer from "@/components/layout/footer"
 import Header from "@/components/layout/header"
 
 import Providers from "./providers"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"]
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["300", "500", "700"]
+})
+
+const titilliumWeb = Titillium_Web({
+  variable: "--font-titillium",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"]
 })
 
 const geistMono = Geist_Mono({
@@ -30,7 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} bg-gradient antialiased`}>
+      <body
+        className={`${poppins.variable} ${titilliumWeb.variable} ${geistMono.variable} font-poppins overflow-x-clip antialiased`}
+      >
         <Providers>
           <main>
             <div className="pt-header-height mx-auto mt-8 max-w-7xl space-y-12 px-2">
