@@ -42,7 +42,7 @@ export default function RootLayout({
       >
         <Providers>
           <main>
-            <div className="mx-auto max-w-7xl space-y-12 px-2">
+            <div className="mx-auto max-w-7xl px-2">
               <Header />
               {children}
               <Footer />

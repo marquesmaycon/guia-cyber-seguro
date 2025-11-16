@@ -19,6 +19,15 @@ export const EthicalOnlineBehavior = () => {
           </CardDescription>
         </CardHeader>
         <CardContent>
+          <h4>6.1. Responsabilidade nas Redes Sociais</h4>
+          <p>
+            As redes sociais nos dão um poder de voz amplificado. A responsabilidade nas redes exige que o usuário
+            reflita sobre as consequências do compartilhamento de informações, memes e opiniões. Postar de forma
+            consciente significa agir com respeito e integridade, reconhecendo que a internet não é uma terra sem lei e
+            que as ações online têm impacto no mundo real.
+          </p>
+        </CardContent>
+        <CardContent>
           <h4>6.2. Como Lidar com Fake News e Desinformação</h4>
           <p>
             A desinformação representa um desafio significativo para a sociedade, afetando processos democráticos e a
@@ -33,6 +42,7 @@ export const EthicalOnlineBehavior = () => {
             enfraquece o senso crítico do usuário, tornando-o mais vulnerável ao apelo emocional e à urgência explorada
             pelos golpistas.
           </p>
+          <h4>Ações de Combate:</h4>
           <ul>
             <li>
               <b>Pensamento Crítico</b>: Antes de compartilhar, pergunte: &quot;Quem está dizendo isso? Qual é a fonte

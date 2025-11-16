@@ -6,6 +6,7 @@ import { Introduction } from "@/components/sections/introduction"
 import { PersonalDataProtection } from "@/components/sections/personal-data-protection"
 import { References } from "@/components/sections/references"
 import { ScamAndFraudes } from "@/components/sections/scams-and-fraudes"
+import { Summary } from "@/components/sections/summary"
 import { SupportChannels } from "@/components/sections/support-channels"
 import { Welcome } from "@/components/sections/welcome"
 
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Summary />
       <Welcome />
       <Introduction />
       <PersonalDataProtection />

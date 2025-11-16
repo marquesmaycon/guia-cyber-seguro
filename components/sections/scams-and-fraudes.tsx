@@ -39,7 +39,7 @@ const rows = [
 export const ScamAndFraudes = () => {
   return (
     <section className="relative" id={sectionHtmlId}>
-      <VectorBg vector="2" position="left" className="top-1/2 -translate-y-1/2 transform" />
+      <VectorBg vector="2" position="right" flipX className="top-1/2 -translate-y-1/2 transform" />
       <Card>
         <CardHeader>
           <CardTitle>

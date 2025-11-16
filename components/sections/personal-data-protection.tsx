@@ -110,6 +110,27 @@ export const PersonalDataProtection = () => {
           </ul>
         </CardContent>
         <CardContent>
+          <h4>2.3. Autenticação de Dois Fatores (2FA): A Proteção Extra</h4>
+          <p>
+            A Autenticação de Dois Fatores (2FA), ou verificação em duas etapas, é a camada de segurança mais robusta
+            que um usuário leigo pode implementar. Ela age como uma <b>ponte de segurança</b> que protege a conta mesmo
+            que o usuário cometa o erro de usar uma senha fraca ou repetida.
+          </p>
+
+          <p>
+            O 2FA exige um segundo código, além da senha, para entrar na conta. Esse código geralmente é gerado por um
+            aplicativo de autenticação (como Google Authenticator) ou enviado via SMS para o número de celular
+            registrado.
+          </p>
+
+          <p>
+            A ativação do 2FA é crucial, especialmente em aplicativos de mensagem e e-mail. Golpistas tentam obter
+            senhas e códigos de verificação para invadir contas, furtar a identidade e praticar fraudes em nome da
+            vítima. Ao ativar a verificação em duas etapas, mesmo que o cibercriminoso consiga a senha principal, ele
+            ainda precisará do seu dispositivo físico para obter o segundo código, inviabilizando a invasão.
+          </p>
+        </CardContent>
+        <CardContent>
           <h4>2.4. Cuidado ao Compartilhar Informações Online</h4>
           <p>
             A desconfiança deve ser a atitude padrão ao ser solicitado a compartilhar dados sensíveis. Nunca se deve
@@ -123,27 +144,6 @@ export const PersonalDataProtection = () => {
             <b>verificação de identidade</b>. Antes de efetivar qualquer transação, desconfie de pedidos de ajuda
             financeira e contate a pessoa por outro meio de comunicação (como uma ligação para o número antigo ou uma
             videochamada) para confirmar se é realmente ela.
-          </p>
-        </CardContent>
-        <CardContent>
-          <h4>Autenticação de Dois Fatores (2FA): A Proteção Extra</h4>
-          <p>
-            A Autenticação de Dois Fatores (2FA), ou verificação em duas etapas, é a camada de segurança mais robusta
-            que um usuário leigo pode implementar. Ela age como uma <b>ponte de segurança</b> que protege a conta mesmo
-            que o usuário cometa o erro de usar uma senha fraca ou repetida.
-          </p>
-
-          <p>
-            O 2FA exige um segundo código, além da senha, para entrar na conta. Esse código geralmente é gerado por um
-            aplicativo de autenticação (como Google Authenticator) ou enviado via SMS para o número de celular
-            registrado
-          </p>
-
-          <p>
-            A ativação do 2FA é crucial, especialmente em aplicativos de mensagem e e-mail. Golpistas tentam obter
-            senhas e códigos de verificação para invadir contas, furtar a identidade e praticar fraudes em nome da
-            vítima. Ao ativar a verificação em duas etapas, mesmo que o cibercriminoso consiga a senha principal, ele
-            ainda precisará do seu dispositivo físico para obter o segundo código, inviabilizando a invasão.
           </p>
 
           <Separator className="my-4" />
