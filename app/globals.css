@@ -85,9 +85,9 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 
   --header-height: 6rem;
-  --palette-primary: #00A7D6;
-  --palette-accent: #3ED5DD;
-  --palette-secondary: #0A767B;
+  --palette-primary: #00a7d6;
+  --palette-accent: #3ed5dd;
+  --palette-secondary: #0a767b;
   --palette-background: #171717;
 }
 
@@ -95,6 +95,7 @@
   html {
     scroll-behavior: smooth;
   }
+
   * {
     @apply border-border outline-ring/50;
   }
@@ -108,15 +109,15 @@
   }
 
   h2 {
-    @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-palette-accent font-sans text-balance;
+    @apply text-palette-accent scroll-m-20 border-b pb-2 font-sans text-3xl font-semibold tracking-tight text-balance first:mt-0;
   }
 
   h3 {
-    @apply scroll-m-20 text-2xl font-semibold tracking-tight font-sans;
+    @apply scroll-m-20 font-sans text-2xl font-semibold tracking-tight;
   }
 
   h4 {
-    @apply scroll-m-20 text-xl font-semibold tracking-tight text-palette-primary font-sans;
+    @apply text-palette-primary scroll-m-20 font-sans text-xl font-semibold tracking-tight;
   }
 
   p {
@@ -134,7 +135,7 @@
   ol {
     @apply my-6 ml-6 list-decimal [&>li]:mt-2;
   }
-  
+
   code {
     @apply bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
   }
@@ -149,14 +150,32 @@
   }
 
   .bg-vector-1 {
-    background: url('/vector1.svg');
+    background: url("/vector1.svg");
   }
 
   .bg-vector-2 {
-    background: url('/vector2.svg');
+    background: url("/vector2.svg");
   }
-  
+
   section:has(div[data-slot="card"]) {
     @apply pt-header-height;
   }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(100, 100, 100, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-palette-secondary);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-palette-accent);
+  }
 }
+

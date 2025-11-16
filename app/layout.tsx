@@ -26,8 +26,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Guia Ciber Seguro",
-  description: "Um guia completo para segurança cibernética."
+  title: "Guia Cyber Seguro: Segurança Digital Descomplicada para Todos",
+  description:
+    "Guia completo de Cibersegurança Acessível. Aprenda a evitar golpes de phishing, proteger dados pessoais, usar 2FA e fazer backup. Sua vida digital protegida."
 }
 
 export default function RootLayout({

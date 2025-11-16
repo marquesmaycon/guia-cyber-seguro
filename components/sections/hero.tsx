@@ -17,7 +17,14 @@ export const Hero = () => {
         </p>
       </div>
       <div className="hidden md:block">
-        <Image src="/shield.png" alt="Shield" width={530} height={400} className="object-contain" />
+        <Image
+          src="/shield.png"
+          alt="Shield"
+          width={530}
+          height={400}
+          className="w-auto object-contain"
+          loading="eager"
+        />
       </div>
     </section>
   )

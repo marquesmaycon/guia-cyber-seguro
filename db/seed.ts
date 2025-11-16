@@ -1,5 +1,7 @@
 import "dotenv/config"
+
 import { sections } from "@/components/sections/sections"
+
 import { db } from "."
 import { section } from "./schema"
 

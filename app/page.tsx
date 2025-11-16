@@ -1,6 +1,7 @@
 import { Conclusion } from "@/components/sections/conclusion"
 import { DigitalOrganization } from "@/components/sections/digital-organization"
 import { DownloadAndSoftwares } from "@/components/sections/download-and-softwares"
+import { EthicalOnlineBehavior } from "@/components/sections/ethical-online-behavior"
 import { Hero } from "@/components/sections/hero"
 import { Introduction } from "@/components/sections/introduction"
 import { PersonalDataProtection } from "@/components/sections/personal-data-protection"
@@ -21,6 +22,7 @@ export default function Home() {
       <ScamAndFraudes />
       <DownloadAndSoftwares />
       <DigitalOrganization />
+      <EthicalOnlineBehavior />
       <SupportChannels />
       <Conclusion />
       <References />

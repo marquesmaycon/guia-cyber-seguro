@@ -1,4 +1,5 @@
 import { LikeButton } from "../like-button"
+import { TableCard, TableCardRow } from "../table-card"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card"
 import { Separator } from "../ui/separator"
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "../ui/table"
@@ -110,7 +111,8 @@ export const SupportChannels = () => {
           </ol>
 
           <Separator className="my-4" />
-          <h4>Canais Oficiais de Denúncia no Brasil</h4>
+
+          <h4 className="mb-4">Canais Oficiais de Denúncia no Brasil</h4>
 
           <Table className="hidden lg:block">
             <TableCaption>Canais Oficiais de Denúncia no Brasil</TableCaption>
@@ -134,20 +136,15 @@ export const SupportChannels = () => {
 
           <div className="block space-y-4 lg:hidden">
             {rows.map((row, i) => (
-              <div key={i.toString()} className="bg-palette-secondary/20 rounded-lg border p-4">
-                <p>
-                  <b>O SINAL VERMELHO:</b> {row.finalidade}
-                </p>
-                <p>
-                  <b>O que o Golpista Explora:</b> {row.canais}
-                </p>
-                <p>
-                  <b>A AÇÃO IMEDIATA:</b> {row.quandoUsar}
-                </p>
-              </div>
+              <TableCard key={i.toString()}>
+                <TableCardRow title="O SINAL VERMELHO:" description={row.finalidade} />
+                <TableCardRow title="O que o Golpista Explora:" description={row.canais} />
+                <TableCardRow title="A AÇÃO IMEDIATA:" description={row.quandoUsar} />
+              </TableCard>
             ))}
           </div>
         </CardContent>
+
         <CardContent>
           <h4>7.3. Plataformas Educativas de Segurança Digital</h4>
           <p>
