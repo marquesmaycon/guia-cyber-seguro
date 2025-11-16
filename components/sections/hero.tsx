@@ -5,7 +5,7 @@ import { VectorBg } from "../ui/vector-bg"
 
 export const Hero = () => {
   return (
-    <section className="relative flex items-center justify-between px-4">
+    <section className="relative flex items-center justify-between px-4" id="hero">
       <VectorBg vector="1" position="left" className="-top-60" />
       <div className="space-y-6 text-white">
         <h1 className="text-start font-sans text-5xl text-pretty md:text-7xl lg:text-8xl">

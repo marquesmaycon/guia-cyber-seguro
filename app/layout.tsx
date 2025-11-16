@@ -11,7 +11,7 @@ import Providers from "./providers"
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["300", "500", "700"]
+  weight: ["300", "400", "500", "700"]
 })
 
 const titilliumWeb = Titillium_Web({

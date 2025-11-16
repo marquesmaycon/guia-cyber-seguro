@@ -21,7 +21,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative mt-40 flex flex-col">
+    <footer className="relative mt-40 flex flex-col" id="about">
       <VectorBg vector="1" position="right" className="-top-65 right-0" />
 
       <div className="bg-palette-primary/5 flex-1 px-4 py-12 text-white backdrop-blur-md">
