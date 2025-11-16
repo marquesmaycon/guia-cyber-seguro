@@ -22,7 +22,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="relative mt-40 flex flex-col" id="about">
-      <VectorBg vector="1" position="right" className="-top-65 right-0" />
+      <VectorBg vector="1" position="right" className="-top-40 right-0" />
 
       <div className="bg-palette-primary/5 flex-1 px-4 py-12 text-white backdrop-blur-md">
         <div className="text-center font-mono">
@@ -36,7 +36,25 @@ export default function Footer() {
           </p>
         </div>
         <Separator className="bg-palette-secondary/20 my-8" />
-        <div className="z-0 flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:justify-between">
+        <div>
+          <p className="text-muted text-center font-mono text-sm">
+            O design do projeto foi altamente inspirado no design da comunidade do Figma{" "}
+            <a
+              href="https://www.figma.com/community/file/1302801971340508755"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              CyberEz - Cyber Security
+            </a>{" "}
+            por{" "}
+            <a href="https://www.figma.com/@budogol" target="_blank" rel="noopener noreferrer" className="underline">
+              Budogol
+            </a>
+          </p>
+        </div>
+        <Separator className="bg-palette-secondary/20 my-8" />
+        <div className="z-0 flex flex-col items-center justify-center gap-8 text-center font-mono md:flex-row md:items-center">
           <h6>Desenvolvido por Maycon Marques © {new Date().getFullYear()}</h6>
           <div className="flex items-center justify-between">
             {socialLinks.map((link) => (

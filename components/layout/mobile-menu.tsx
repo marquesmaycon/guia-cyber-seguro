@@ -5,7 +5,7 @@ import { useState } from "react"
 
 import { Button } from "../ui/button"
 import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "../ui/drawer"
-import { SectionsMenu } from "./sections-menu"
+import { SummaryMenu } from "./summary-menu"
 
 export const MobileMenu = () => {
   const [open, setOpen] = useState(false)
@@ -29,7 +29,7 @@ export const MobileMenu = () => {
               <a href="#hero">Início</a>
             </Button>
           </DrawerClose>
-          <SectionsMenu DrawerClose={DrawerClose} />
+          <SummaryMenu onItemClick={() => setOpen(false)} />
           <Button variant="outline" size="lg" asChild className="rounded-full border-transparent shadow-none">
             <a href="#about">Sobre</a>
           </Button>
