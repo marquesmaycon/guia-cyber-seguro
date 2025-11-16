@@ -9,7 +9,7 @@ export function Introduction() {
   return (
     <div className="relative">
       <VectorBg vector="2" position="right" flipX className="top-1/2 -translate-y-1/2 transform" />
-      <Card id={sectionHtmlId} className="relative">
+      <Card id={sectionHtmlId}>
         <CardHeader>
           <CardTitle>
             <h2>1. Introdução à Navegação Segura: O Que é e Por Que Importa</h2>

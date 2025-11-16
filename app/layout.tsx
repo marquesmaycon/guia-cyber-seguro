@@ -36,9 +36,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
-        className={`${poppins.variable} ${titilliumWeb.variable} ${geistMono.variable} font-poppins overflow-x-clip antialiased`}
+        className={`${poppins.variable} ${titilliumWeb.variable} ${geistMono.variable} font-poppins overflow-x-hidden antialiased`}
       >
         <Providers>
           <main>
