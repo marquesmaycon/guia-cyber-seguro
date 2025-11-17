@@ -70,7 +70,7 @@ export const ScamAndFraudes = () => {
             e doenças graves. Se a mensagem está explorando um tema de comoção ou criando uma pressão temporal intensa,
             esse é um sinal de alerta vermelho.
           </p>
-          <h4>Sinais em E-mails Falsos:</h4>
+          <h4 className="mt-4">Sinais em E-mails Falsos:</h4>
           <ul className="styled">
             <li>
               <b>Urgência e Pressão</b>: Mensagens que informam que a conta será bloqueada se você não clicar

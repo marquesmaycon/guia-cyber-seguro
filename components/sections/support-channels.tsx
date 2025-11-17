@@ -91,9 +91,9 @@ export const SupportChannels = () => {
               crucial, pois apenas o banco pode tentar reverter o prejuízo.
             </li>
             <li>
-              <b>Coleta de Provas Digitais de QualidadeColeta de Provas Digitais de Qualidade</b>: A polícia precisa de
-              evidências detalhadas. A vítima deve coletar prints de conversas que incluam: dados de pagamento (chaves
-              PIX, contas), trechos das ameaças e, crucialmente, informações completas dos perfis dos autores.
+              <b>Coleta de Provas Digitais de Qualidade</b>: A polícia precisa de evidências detalhadas. A vítima deve
+              coletar prints de conversas que incluam: dados de pagamento (chaves PIX, contas), trechos das ameaças e,
+              crucialmente, informações completas dos perfis dos autores.
               <ul className="styled">
                 <li>
                   <b>Atenção à URL</b>: Para que a investigação seja eficaz, a polícia exige a <b>URL completa</b> (o

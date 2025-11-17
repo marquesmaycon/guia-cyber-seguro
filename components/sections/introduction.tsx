@@ -62,11 +62,11 @@ export function Introduction() {
               roubar dados ou controlar seu dispositivo sem seu consentimento.
             </li>
             <li>
-              Spyware: Um tipo de programa espião que rastreia suas atividades, o que você digita e os sites que você
-              visita, repassando essas informações a terceiros.
+              <b>Spyware</b>: Um tipo de programa espião que rastreia suas atividades, o que você digita e os sites que
+              você visita, repassando essas informações a terceiros.
             </li>
             <li>
-              Phishing: Considerado um dos golpes mais conhecidos, consiste em induzir a vítima a clicar em links
+              <b>Phishing</b>: Considerado um dos golpes mais conhecidos, consiste em induzir a vítima a clicar em links
               maliciosos criados por criminosos para obter dados.
             </li>
           </ul>

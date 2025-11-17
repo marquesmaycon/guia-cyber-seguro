@@ -42,7 +42,7 @@ export const EthicalOnlineBehavior = () => {
             enfraquece o senso crítico do usuário, tornando-o mais vulnerável ao apelo emocional e à urgência explorada
             pelos golpistas.
           </p>
-          <h4>Ações de Combate:</h4>
+          <h4 className="mt-4">Ações de Combate:</h4>
           <ul className="styled">
             <li>
               <b>Pensamento Crítico</b>: Antes de compartilhar, pergunte: &quot;Quem está dizendo isso? Qual é a fonte
@@ -69,7 +69,7 @@ export const EthicalOnlineBehavior = () => {
             <b>direito legal e acionável</b> , garantindo a <b>soberania digital</b> pessoal do cidadão.
           </p>
 
-          <h4>Seus Direitos como Titular de Dados</h4>
+          <h4 className="mt-4">Seus Direitos como Titular de Dados</h4>
 
           <p>A LGPD empodera o cidadão com direitos claros sobre suas informações. O titular de dados pode :</p>
 
