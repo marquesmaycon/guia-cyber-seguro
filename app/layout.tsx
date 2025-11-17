@@ -1,11 +1,11 @@
 import "./globals.css"
 
+import { Analytics } from "@vercel/analytics/next"
 import type { Metadata } from "next"
 import { Geist_Mono, Poppins, Titillium_Web } from "next/font/google"
 
 import { Footer } from "@/components/layout/footer"
 import { Header } from "@/components/layout/header"
-
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -46,6 +46,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </main>
+        <Analytics />
       </body>
     </html>
   )
