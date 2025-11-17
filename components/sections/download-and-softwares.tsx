@@ -1,3 +1,7 @@
+import Image from "next/image"
+
+import codingImg from "@/public/coding.png"
+
 import { LikeButton } from "../like-button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card"
 import { VectorBg } from "../ui/vector-bg"
@@ -38,6 +42,17 @@ export const DownloadAndSoftwares = () => {
             <b>pontos de entrada físicos</b> do dispositivo. Por isso, a prática de desabilitar o Wi-Fi e o Bluetooth
             quando não estão em uso, conforme sugerido pelo CERT.br, é uma medida crucial de minimização de risco.
           </p>
+        </CardContent>
+        <CardContent>
+          <div className="relative aspect-1032/300">
+            <Image
+              src={codingImg}
+              alt="Pessoa programando em um laptop"
+              fill
+              className="rounded-xl object-cover"
+              loading="lazy"
+            />
+          </div>
         </CardContent>
         <CardContent>
           <h4>4.2. Fontes Confiáveis de Downloads</h4>

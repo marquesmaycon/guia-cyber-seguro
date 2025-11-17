@@ -1,3 +1,7 @@
+import Image from "next/image"
+
+import keyboardImg from "@/public/keyboard.png"
+
 import { LikeButton } from "../like-button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../ui/card"
 import { VectorBg } from "../ui/vector-bg"
@@ -81,6 +85,17 @@ export function Introduction() {
             que criam um senso de urgência ou prometem vantagens exageradas, pois é aí que o cibercriminoso busca levar
             a vítima ao erro.
           </p>
+        </CardContent>
+        <CardContent>
+          <div className="relative aspect-1239/500 w-full">
+            <Image
+              src={keyboardImg}
+              alt="Keyboard Illustration"
+              fill
+              className="rounded-xl object-cover"
+              loading="lazy"
+            />
+          </div>
         </CardContent>
         <CardFooter>
           <LikeButton sectionHtmlId={sectionHtmlId} />

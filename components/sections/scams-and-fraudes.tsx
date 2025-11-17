@@ -1,4 +1,5 @@
 import { LikeButton } from "../like-button"
+import { TableCard, TableCardRow } from "../table-card"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card"
 import { Separator } from "../ui/separator"
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "../ui/table"
@@ -170,17 +171,11 @@ export const ScamAndFraudes = () => {
 
           <div className="block space-y-4 lg:hidden">
             {rows.map((row, i) => (
-              <div key={i.toString()} className="bg-palette-secondary/20 rounded-lg border p-4">
-                <p>
-                  <b>O SINAL VERMELHO:</b> {row.sinalVermelho}
-                </p>
-                <p>
-                  <b>O que o Golpista Explora:</b> {row.explora}
-                </p>
-                <p>
-                  <b>A AÇÃO IMEDIATA:</b> {row.acao}
-                </p>
-              </div>
+              <TableCard key={i.toString()}>
+                <TableCardRow title="O SINAL VERMELHO:" description={row.sinalVermelho} />
+                <TableCardRow title="O que o Golpista Explora:" description={row.explora} />
+                <TableCardRow title="A AÇÃO IMEDIATA:" description={row.acao} />
+              </TableCard>
             ))}
           </div>
         </CardContent>

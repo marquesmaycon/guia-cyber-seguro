@@ -1,4 +1,5 @@
 import { LikeButton } from "../like-button"
+import { TableCard, TableCardRow } from "../table-card"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card"
 import { Separator } from "../ui/separator"
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "../ui/table"
@@ -130,6 +131,7 @@ export const PersonalDataProtection = () => {
             ainda precisará do seu dispositivo físico para obter o segundo código, inviabilizando a invasão.
           </p>
         </CardContent>
+
         <CardContent>
           <h4>2.4. Cuidado ao Compartilhar Informações Online</h4>
           <p>
@@ -172,17 +174,11 @@ export const PersonalDataProtection = () => {
 
           <div className="block space-y-4 lg:hidden">
             {rows.map((row, i) => (
-              <div key={i.toString()} className="bg-palette-secondary/20 rounded-lg border p-4">
-                <p>
-                  <b>O que Fazer:</b> {row.oQueFazer}
-                </p>
-                <p>
-                  <b>Como Implementar:</b> {row.comoImplementar}
-                </p>
-                <p>
-                  <b>Por quê:</b> {row.porque}
-                </p>
-              </div>
+              <TableCard key={i.toString()}>
+                <TableCardRow title="O que Fazer:" description={row.oQueFazer} />
+                <TableCardRow title="Como Implementar:" description={row.comoImplementar} />
+                <TableCardRow title="Por quê:" description={row.porque} />
+              </TableCard>
             ))}
           </div>
         </CardContent>

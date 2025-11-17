@@ -8,7 +8,7 @@ import { sections } from "./sections"
 
 const sectionHtmlId = sections.supportChannels.htmlId
 
-const heads = ["Finalidade da Denúncia	", "Canais de Contato	", "Quando Usar"]
+const heads = ["Finalidade da Denúncia", "Canais de Contato", "Quando Usar"]
 
 const rows = [
   {
@@ -137,9 +137,9 @@ export const SupportChannels = () => {
           <div className="block space-y-4 lg:hidden">
             {rows.map((row, i) => (
               <TableCard key={i.toString()}>
-                <TableCardRow title="O SINAL VERMELHO:" description={row.finalidade} />
-                <TableCardRow title="O que o Golpista Explora:" description={row.canais} />
-                <TableCardRow title="A AÇÃO IMEDIATA:" description={row.quandoUsar} />
+                <TableCardRow title="Finalidade da Denúncia:" description={row.finalidade} />
+                <TableCardRow title="Canais de Contato:" description={row.canais} />
+                <TableCardRow title="Quando Usar:" description={row.quandoUsar} />
               </TableCard>
             ))}
           </div>

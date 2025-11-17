@@ -1,3 +1,7 @@
+import Image from "next/image"
+
+import virtualDataImg from "@/public/virtual-data.png"
+
 import { LikeButton } from "../like-button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card"
 import { VectorBg } from "../ui/vector-bg"
@@ -80,6 +84,17 @@ export const DigitalOrganization = () => {
               </b>
             </li>
           </ol>
+        </CardContent>
+        <CardContent>
+          <div className="relative aspect-1032/300">
+            <Image
+              src={virtualDataImg}
+              alt="Virtual Data Illustration"
+              fill
+              className="rounded-xl object-cover"
+              loading="lazy"
+            />
+          </div>
         </CardContent>
         <CardContent>
           <h4>5.3. Como Evitar Perda de Dados</h4>
