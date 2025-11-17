@@ -56,7 +56,7 @@ export function Introduction() {
             mais comuns estão associados à introdução de softwares maliciosos e à tentativa de roubo de credenciais.
           </p>
           <p>Entre as ameaças digitais mais conhecidas, destacam-se:</p>
-          <ul>
+          <ul className="styled">
             <li>
               <b>Malware:</b> Termo genérico para software malicioso, como vírus, que tem o objetivo de danificar,
               roubar dados ou controlar seu dispositivo sem seu consentimento.

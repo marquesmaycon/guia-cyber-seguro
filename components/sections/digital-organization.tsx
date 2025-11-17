@@ -35,7 +35,7 @@ export const DigitalOrganization = () => {
             usuários, pois oferece uma <b>estratégia logística</b> que simplifica a segurança, que para o público leigo
             pode ser complexa.
           </p>
-          <ul>
+          <ul className="styled">
             <li>
               <b>Segurança e Automação</b>: Provedores de serviços em nuvem (como Google Cloud, Dropbox, etc.) facilitam
               a automatização e padronização de backups.
@@ -69,7 +69,7 @@ export const DigitalOrganization = () => {
             para evitar a perda de dados:
           </p>
 
-          <ol>
+          <ol className="styled">
             <li>
               <b>3 Cópias</b>: Mantenha três cópias dos seus dados: o arquivo original e duas cópias de segurança.
             </li>

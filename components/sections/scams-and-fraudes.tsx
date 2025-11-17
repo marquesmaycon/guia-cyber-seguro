@@ -71,7 +71,7 @@ export const ScamAndFraudes = () => {
             esse é um sinal de alerta vermelho.
           </p>
           <h4>Sinais em E-mails Falsos:</h4>
-          <ul>
+          <ul className="styled">
             <li>
               <b>Urgência e Pressão</b>: Mensagens que informam que a conta será bloqueada se você não clicar
               imediatamente.
@@ -116,7 +116,7 @@ export const ScamAndFraudes = () => {
             sociais para capturar dados e cometer fraudes.
           </p>
           <h4 className="mt-4">Como Reconhecer Links e URLs Falsas:</h4>
-          <ol>
+          <ol className="styled">
             <li>
               <b>Prévia do Link</b>: Antes de clicar em qualquer link, passe o mouse sobre ele (no computador) ou toque
               e segure (no celular). O endereço real aparecerá em um canto da tela. Se o endereço (URL) parecer estranho

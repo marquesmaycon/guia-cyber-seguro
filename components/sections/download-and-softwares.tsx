@@ -76,7 +76,7 @@ export const DownloadAndSoftwares = () => {
           <h4 className="mt-4">O Papel do Antivírus (O Escudo Proativo)</h4>
 
           <p>Um software antivírus age como um escudo digital, fornecendo múltiplas camadas de defesa:</p>
-          <ul>
+          <ul className="styled">
             <li>
               <b>Defesa Proativa</b>: Ele identifica e neutraliza ameaças antes que elas consigam comprometer o sistema.
             </li>
@@ -102,7 +102,7 @@ export const DownloadAndSoftwares = () => {
             malware e vírus são desenvolvidos diariamente. As atualizações:
           </p>
 
-          <ol>
+          <ol className="styled">
             <li>
               <b>Combatem Ameaças Emergentes</b>: Garantem que seu software, incluindo o antivírus, esteja equipado para
               detectar e combater as últimas ameaças.

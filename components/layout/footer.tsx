@@ -19,7 +19,7 @@ const socialLinks = [
   }
 ]
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="mt-header-height relative flex flex-col" id="about">
       <VectorBg vector="1" position="right" className="-top-40 right-0" />

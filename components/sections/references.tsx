@@ -22,7 +22,7 @@ export const References = () => {
               <ChevronDown className="transition-transform group-data-[state=open]:rotate-180" />
             </CollapsibleTrigger>
             <CollapsibleContent>
-              <ul>
+              <ul className="styled">
                 {refs.map((ref, index) => (
                   <li key={ref.url}>
                     {index + 1}.{" "}

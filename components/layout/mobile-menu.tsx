@@ -21,7 +21,11 @@ export const MobileMenu = () => {
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
-        <Button className="mobile ml-auto rounded-full border-transparent shadow-none sm:hidden" variant="outline">
+        <Button
+          aria-label="Abrir menu"
+          className="rounded-full border-transparent shadow-none sm:hidden"
+          variant="outline"
+        >
           <Menu className="size-6" />
         </Button>
       </DrawerTrigger>

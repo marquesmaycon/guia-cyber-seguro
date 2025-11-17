@@ -3,10 +3,8 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Geist_Mono, Poppins, Titillium_Web } from "next/font/google"
 
-import Footer from "@/components/layout/footer"
-import Header from "@/components/layout/header"
-
-import Providers from "./providers"
+import { Footer } from "@/components/layout/footer"
+import { Header } from "@/components/layout/header"
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -41,15 +39,13 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${titilliumWeb.variable} ${geistMono.variable} font-poppins overflow-x-hidden antialiased`}
       >
-        <Providers>
-          <main>
-            <div className="mx-auto max-w-7xl px-2">
-              <Header />
-              {children}
-              <Footer />
-            </div>
-          </main>
-        </Providers>
+        <main>
+          <div className="mx-auto max-w-7xl px-2">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </main>
       </body>
     </html>
   )

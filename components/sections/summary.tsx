@@ -14,7 +14,7 @@ export const Summary = () => {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <ul className="">
+          <ul className="styled">
             {Object.values(sections).map(({ htmlId, title, subtitles }) => (
               <li key={htmlId} className="break-inside-avoid">
                 <Collapsible className="group">
@@ -23,7 +23,7 @@ export const Summary = () => {
                       {title}
                     </a>
                     {!!subtitles.length && (
-                      <CollapsibleTrigger>
+                      <CollapsibleTrigger aria-label="Abrir subtitulos">
                         <ChevronDown className="transition-transform group-data-[state=open]:rotate-180" />
                       </CollapsibleTrigger>
                     )}
@@ -31,7 +31,7 @@ export const Summary = () => {
 
                   <CollapsibleContent>
                     {subtitles?.map((subtitle, i) => (
-                      <ul key={`${htmlId}-${i}`}>
+                      <ul className="styled" key={`${htmlId}-${i}`}>
                         <li>{subtitle}</li>
                       </ul>
                     ))}

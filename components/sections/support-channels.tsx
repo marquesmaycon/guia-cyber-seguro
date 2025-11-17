@@ -53,7 +53,7 @@ export const SupportChannels = () => {
           <h4>7.1. Onde Denunciar Crimes Cibernéticos (A Quem Recorrer)</h4>
           <p>O Brasil oferece diversos canais oficiais para registrar ocorrências e buscar apoio:</p>
 
-          <ol>
+          <ol className="styled">
             <li>
               <b>anais de Atendimento Geral e Direitos Humanos</b>: Os serviços gratuitos Disque 100 e Ligue 180 atendem
               denúncias de crimes digitais e violações de direitos humanos, como extorsão sexual ou ameaças.
@@ -84,7 +84,7 @@ export const SupportChannels = () => {
             direitos e facilitar a investigação:
           </p>
 
-          <ol>
+          <ol className="styled">
             <li>
               <b>Prioridade Financeira</b>: Imediatamente, contate seu banco ou operadora de cartão de crédito para
               bloquear contas e cartões, e para contestar quaisquer transações fraudulentas ou enganosas. A agilidade é
@@ -94,7 +94,7 @@ export const SupportChannels = () => {
               <b>Coleta de Provas Digitais de QualidadeColeta de Provas Digitais de Qualidade</b>: A polícia precisa de
               evidências detalhadas. A vítima deve coletar prints de conversas que incluam: dados de pagamento (chaves
               PIX, contas), trechos das ameaças e, crucialmente, informações completas dos perfis dos autores.
-              <ul>
+              <ul className="styled">
                 <li>
                   <b>Atenção à URL</b>: Para que a investigação seja eficaz, a polícia exige a <b>URL completa</b> (o
                   endereço web) dos perfis de redes sociais (Instagram, Facebook) ou do site falso. <i>Prints</i>{" "}
@@ -151,7 +151,7 @@ export const SupportChannels = () => {
             A educação contínua é a melhor forma de defesa. O usuário deve buscar fontes de informação confiáveis e
             atualizadas:
           </p>
-          <ul>
+          <ul className="styled">
             <li>
               <b>CERT.br</b>: O Centro de Estudos, Resposta e Tratamento de Incidentes de Segurança no Brasil
               disponibiliza a <b>Cartilha de Segurança para Internet</b> , um guia didático e completo sobre diversos

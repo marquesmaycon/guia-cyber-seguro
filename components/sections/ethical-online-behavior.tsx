@@ -43,7 +43,7 @@ export const EthicalOnlineBehavior = () => {
             pelos golpistas.
           </p>
           <h4>Ações de Combate:</h4>
-          <ul>
+          <ul className="styled">
             <li>
               <b>Pensamento Crítico</b>: Antes de compartilhar, pergunte: &quot;Quem está dizendo isso? Qual é a fonte
               original? É um veículo de imprensa confiável?&quot;
@@ -73,7 +73,7 @@ export const EthicalOnlineBehavior = () => {
 
           <p>A LGPD empodera o cidadão com direitos claros sobre suas informações. O titular de dados pode :</p>
 
-          <ul>
+          <ul className="styled">
             <li>Receber confirmação sobre o tratamento de seus dados.</li>
             <li>Pedir a correção de dados incompletos ou desatualizados.</li>
             <li>

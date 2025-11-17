@@ -23,7 +23,7 @@ export const Conclusion = () => {
             excessiva.
           </p>
           <p>O cidadão se torna mais seguro quando internaliza três princípios de proteção:</p>
-          <ol>
+          <ol className="styled">
             <li>
               <b>Desconfie Ativamente (Combate à Engenharia Social)</b>: Adote a regra da multi-verificação de
               identidade. Nunca clique em links de urgência e, se receber um pedido de ajuda financeira de um conhecido,

@@ -68,7 +68,7 @@ export const PersonalDataProtection = () => {
             É necessário adotar o Princípio do Mínimo Privilégio Pessoal, operando no &quot;modo invisível&quot; sempre
             que possível. Isso significa:
           </p>
-          <ul>
+          <ul className="styled">
             <li>
               Gerenciar Aplicativos de Mensagens: Se você utiliza o aplicativo de mensagem apenas no celular, é uma boa
               prática desativar a função de download automático de fotos e vídeos recebidos. Isso evita que arquivos
@@ -98,7 +98,7 @@ export const PersonalDataProtection = () => {
             curta, escolha uma frase inteira e utilize um padrão para extrair os caracteres. Por exemplo, pode-se usar a
             primeira, segunda ou última letra de cada palavra da frase, adicionando caracteres especiais.
           </p>
-          <ul>
+          <ul className="styled">
             <li>
               Exemplo Prático: A frase &quot;Eu adoro acessar o fórum Adrenaline&quot; pode ser transformada na senha
               complexa <code>!EaAofA.</code>

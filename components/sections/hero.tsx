@@ -1,5 +1,7 @@
 import Image from "next/image"
 
+import shieldImg from "@/public/shield.png"
+
 import { VectorBg } from "../ui/vector-bg"
 
 export const Hero = () => {
@@ -17,14 +19,7 @@ export const Hero = () => {
         </p>
       </div>
       <div className="hidden md:block">
-        <Image
-          src="/shield.png"
-          alt="Shield"
-          width={530}
-          height={400}
-          className="w-auto object-contain"
-          loading="eager"
-        />
+        <Image src={shieldImg} alt="Shield" className="w-auto object-contain" />
       </div>
     </section>
   )
